@@ -1,0 +1,114 @@
+table{
+  &.basic-table {
+    thead {
+      tr {
+        th {
+          @apply  px-6 py-3 border-b border-gray-300 text-left leading-4 tracking-wider;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          @apply  px-6 py-4 border-b whitespace-nowrap border-gray-200;
+        }
+      }
+    }
+  }
+  &.borderless-table {
+    thead {
+      tr {
+        th {
+          @apply  px-6 py-3 border-b border-gray-300 text-left leading-4 tracking-wider;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          @apply  px-6 py-4 border-0 whitespace-nowrap;
+        }
+      }
+    }
+  }
+}
+.dataTable-container {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+ 
+      tr {
+        th.arrow-none {
+          a.dataTable-sorter{
+            &::after {
+              border-bottom: 0px solid #fff !important;
+            }
+            &::before {
+              border-top: 0px solid #fff !important;
+            }
+        }
+      }
+    }
+    
+  &.borderless {
+    table.dataTable-table td {
+      padding: .75rem;
+      vertical-align: middle;
+      border-top: none;
+    }
+    .dataTable-table > thead > tr > th {
+      border-bottom: 1px solid #E5E7EB;
+    }
+  }
+  &.hover {
+    tbody{
+      tr:hover {
+        background-color: #F3F4F6;
+      }
+    }
+  }
+  table.dataTable-table td {
+    padding: .75rem;
+    vertical-align: middle;
+    border-top: 1px solid #E5E7EB;
+  }
+
+  .dataTable-table > thead > tr > th {
+    border-bottom: none;
+  }
+  .dataTable-pagination .active a, .dataTable-pagination .active a:focus, .dataTable-pagination .active a:hover {
+      background-color: #8B5CF6;
+      color: #fff;
+      cursor: default;
+  }
+  .dataTable-pagination a:hover {
+    background-color: #DDD6FE;
+  }
+  .dataTable-sorter::before, .dataTable-sorter::after {
+    right: -4px;
+  }
+  .dataTable-input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .dataTable-selector{
+    &:focus {
+      outline: none;
+    }
+  }
+  
+}
+.dataTable-table th a {
+  
+  margin-right: 2rem;
+}

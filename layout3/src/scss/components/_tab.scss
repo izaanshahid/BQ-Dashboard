@@ -1,0 +1,56 @@
+// tab style start -------
+[role='tablist'] {
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+[role='tablist'][aria-orientation='vertical'] {
+ flex-direction: column;
+}
+
+[role='tab'], [role='tabpanel'] {
+ 
+ margin-right: 0.625rem;
+ margin-bottom: 0.625rem;
+ padding: 0.4375rem 0.625rem;
+ border-radius: 0.125rem;
+}
+
+[role='tab'] {
+ float: left;
+ cursor: pointer;
+}
+
+[role='tabpanel'] {
+ width: 100%;
+ clear: both;
+ margin-right: 0;
+ box-sizing: border-box;
+ &:focus {
+   outline: none;
+ }
+}
+
+[role='tab'][aria-selected='true'] {
+ @apply border-b-2 border-primary-500 text-primary-500;
+ font-weight: bold;
+ 
+}
+
+
+
+
+
+
+.ul-tab {
+ display: flex;
+ flex-wrap: wrap;
+ .ul-tab-item {
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+   &:focus {
+     outline: none;
+   }
+ }
+}

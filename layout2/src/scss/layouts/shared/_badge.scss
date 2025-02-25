@@ -1,0 +1,17 @@
+.badge {
+    @apply inline-block px-2 py-1 text-xs rounded font-bold;   
+    &.sm {
+      font-size: 65% !important;
+      @apply font-semibold;
+    }
+}
+.badge-pill {
+    @apply inline-block px-3 py-1 text-xs rounded-full font-bold;
+}
+.badge-status {
+    @apply inline-block rounded-full p-1;
+}
+
+.badge-circle {
+    @apply rounded-full flex items-center justify-center;
+}

@@ -1,0 +1,170 @@
+$white:#fff;
+.sidebar-theme-slate {
+  // $slate: map-get($solid-colors, slate);
+  $slate: #242939;
+  // $white:#fff;
+  $contrast-color: $white;
+  $contrast-color: #fff;
+  $contrast-color-light: #666f88;
+  $active-bg: rgba(0,0,0, .1);
+  // $font-weight-semi:500;
+
+  .sidebar-panel {
+    background-color: $slate;
+    .brand {
+      .app-logo-text {
+        color: $white !important;
+       @apply font-semibold;
+      }
+    }
+    .app-user {
+      .app-user-photo img {
+        border-color: $active-bg;
+      }
+      .app-user-info::after {
+        background-color: $active-bg;
+      }
+      .app-user-name {
+        color: $contrast-color !important;
+      }
+      .app-user-control{
+        .control-item {
+          color: $contrast-color !important;
+          &:hover {
+            // color: $active-500;
+            background: $active-bg;
+          }
+        }
+      }
+    }
+    .sidebar-nav{
+      ul.metismenu{
+        span.main-menu-title{
+          color: $contrast-color-light !important;
+        }
+        li{
+          a{
+            color: #989eb3;
+            .nav-icon, &.has-arrow:after {
+              color: $contrast-color-light;
+            }
+            .bullet-icon {
+              background-color: $contrast-color-light;
+            }
+            &:hover{
+              background-color: $active-bg;
+              .nav-icon, &.has-arrow:after{
+                color: $contrast-color;
+              }
+              .bullet-icon {
+                background-color: $contrast-color;
+              }
+            }
+          }
+          &.mm-active > a {
+            background-color: $active-bg;
+            .nav-icon, &.has-arrow:after {
+              color: $contrast-color;
+            }
+            .bullet-icon {
+              background-color: $contrast-color;
+            }
+            color: $contrast-color;              
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar-theme-white {
+
+  $light-active-color: 'blue';
+  $active-200: get-color-opacity($light-active-color, 200);
+  $active-300: get-color-opacity($light-active-color, 300);
+  $active-400: get-color-opacity($light-active-color, 400);
+  $active-500: get-color-opacity($light-active-color, 500);
+
+  .brand{
+    .app-logo-text{
+     @apply text-gray-900;
+     @apply font-semibold;
+    }
+  }
+  .app-user-photo img {
+    @apply border-gray-900;
+  }
+  .border-top-divider {
+    @apply border-gray-900;
+  }
+  .app-user-info::after {
+    @apply bg-gray-900;
+  }
+  .sidebar-panel{
+    background-color: $white;
+    .sidebar-compact-switch::before, 
+    .sidebar-compact-switch::after, 
+    .sidebar-compact-switch div {
+      @apply bg-gray-600;
+    }
+    .app-user .app-user-name,
+    .sidebar-nav ul.metismenu span.main-menu-title,
+    ul.metismenu li a {
+     @apply text-gray-800;
+    }
+    .app-user-control a {
+     @apply text-gray-500;
+      &:hover {
+        @apply text-primary-500;
+       @apply bg-primary-200;
+      }
+    }
+    .sidebar-nav{
+      ul.metismenu{
+        span.main-menu-title{
+          @apply text-gray-500;
+        }
+        li{
+          a{
+            // color: #989eb3;
+            .nav-icon, &.has-arrow:after {
+             @apply text-gray-500;
+            }
+            .bullet-icon {
+              // background-color: $active-300;
+              @apply bg-primary-300;
+            }
+            &:hover{
+              // color: $active-500;
+              @apply bg-gray-200;
+              .nav-icon, &.has-arrow:after{
+                // color: $active-500;
+                @apply text-primary-500;
+              }
+              .bullet-icon {
+                // background-color: $active-500;
+                @apply bg-primary-500;
+              }
+            }
+          }
+          &.mm-active > a {
+            // color: $active-500;
+            @apply bg-gray-200;
+            .nav-icon, &.has-arrow:after {
+              // color: $active-500;
+              @apply text-primary-500;
+
+            }
+            .bullet-icon {
+              background-color: $active-500;
+              @apply bg-primary-500;
+            }
+            //@apply text-gray-800;              
+            
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/* In your CSS */
+// :root {
+//     --blue: #003473;
+//     --indigo: #3f51b5;
+//     --yellow: #ffc107;
+//     --white: #fff;
+//     --gray-dark: #52495a;
+//     --purple: #639;
+//     --pink: #cb3066;
+//     --red: #f44336;
+//     --orange: #e97d23;
+   
+//     --green: #4caf50;
+//     --teal: #20c997;
+//     --cyan: #9c27b0;
+  
+//     --gray: #70657b;
+//     --primary: #639;
+//     --secondary: #52495a;
+//     --success: #4caf50;
+//     --info: #003473;
+//     --warning: #ffc107;
+//     --danger: #f44336;
+//     --light: #bbb;
+//     --dark: #47404f;
+//     --gray-100: #f8f9fa;
+//     --gray-200: #eee;
+//     --gray-300: #dee2e6;
+//     --gray-400: #ced4da;
+//     --gray-500: #bbb;
+//     --gray-600: #70657b;
+//     --gray-700: #665c70;
+//     --gray-800: #52495a;
+//     --gray-900: #47404f;
+//     --breakpoint-xs: 0;
+//     --breakpoint-sm: 576px;
+//     --breakpoint-md: 768px;
+//     --breakpoint-lg: 992px;
+//     --breakpoint-xl: 1200px;
+//   }
+
+@tailwind base;
+
+@tailwind components;
+
+
+@tailwind utilities;
+

@@ -1,0 +1,137 @@
+.avatar-sm {
+  height: 26px;
+  width: 26px;
+  min-width: 26px;
+  min-height: 26px;
+}
+.avatar {
+  height: 36px;
+  width: 36px;
+  min-width: 36px;
+  min-height: 36px;
+}
+
+.avatar-md {
+  height: 64px;
+  width: 64px;
+  min-width: 64px;
+  min-height: 64px;
+}
+
+.avatar-lg {
+  height: 128px;
+  width: 128px;
+  min-width: 128px;
+  min-height: 128px;
+}
+.avatar-card-xs {
+  width: 24px;
+  height: 24px;
+}
+
+.avatar-groups {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  img {
+    position: relative;
+    overflow: hidden;
+    left: 25px;
+    margin-left: -25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .avatar-md {
+//   width: 44px;
+//   min-width: 44px;
+//   height: 44px;
+//   min-height: 44px;
+//   border-radius: 50%;
+// }
+// .avatar-sm {
+//   width: 36px;
+//   min-width: 36px;
+//   height: 36px;
+//   min-height: 36px;
+//   border-radius: 50%;
+// }
+// .avatar-xs {
+//   width: 24px;
+//   min-width: 24px;
+//   height: 24px;
+//   min-height: 24px;
+//   border-radius: 50%;
+// }
+// .avatar-xxs {
+//   width: 18px !important;
+//   min-width: 18px;
+//   height: 18px;
+//   min-height: 18px;
+// }
+
+// .avatar-rectangle-md{
+//   width: 60px;
+//   min-width: 60px;
+//   height: 35px;
+//   min-height: 35px;
+// }
+
+// .avatar-md-lg {
+//   width: 65px;
+//   min-width: 65px;
+//   height: 65px;
+//   min-height: 65px;
+// }
+// .avatar-xl {
+//   width: 120px;
+//   min-width: 120px;
+//   height: 120px;
+//   min-height: 120px;
+// }
+// .avatar-xxl{
+//   width: 250px;
+//   min-width: 250px;
+//   height: 250px;
+//   min-height: 250px;
+// }
+// .avatar-lg{
+//   width: 56px;
+//   min-width: 56px;
+//   height: 56px;
+//   min-height: 56px;
+//   border-radius: 50%;
+// }
+
+
+// .avatar-group {
+//   justify-content: flex-start;
+//   margin-left: 13px;
+//   img{
+//     border:2px solid $white;
+//     margin-left: -13px;
+//   }
+//   .badge {
+//     margin-left: -13px;
+//   }
+// }
+
+// .avatar-thumbnail {
+//   width: 200px;
+//   height: auto;
+//   max-width: 200px;
+//   max-height: auto;
+// }
+

@@ -1,0 +1,44 @@
+.app-admin-wrap-layout-3{
+  .subheader {
+    background: red;
+        display: none;
+      }
+      &.subheader-none {
+        .subheader {
+         
+          display: none !important;
+        }
+      }
+ &.subheader-fixed {
+  
+  .subheader{
+    left: 300px;
+    width: calc(100% - 300px);
+
+    
+    @media (max-width: 1024px) {
+      left: 0;
+      width: 100%;
+    }
+  }
+  @media (min-width: 1025px) {
+    &.secondary-sidebar-open {
+      .subheader {
+        width: calc(100% - 300px - #{$secondary-sidebar-width});
+      }
+      
+    }
+    .subheader{
+      top: 0;
+    }
+  }
+  
+  .main-content-body {
+    // padding-top: 60px;
+    @media (max-width: 1024px) {
+      padding-top: 90px;
+    }
+    
+  }
+}
+}

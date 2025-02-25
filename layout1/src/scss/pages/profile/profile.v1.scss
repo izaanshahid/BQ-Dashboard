@@ -1,0 +1,20 @@
+
+
+.ul-widget-profile-img {
+ @media (max-width: "991px") {
+  display: none;
+}
+ img {
+   @media (max-width: "991px") {
+     display: none;
+   }
+ }
+ &:after {
+   content: "";
+   position: absolute;
+   width: 1px;
+   height: calc(100% - 36px);
+   left: 18px;
+   background-color: #D1D5DB;
+ }
+}

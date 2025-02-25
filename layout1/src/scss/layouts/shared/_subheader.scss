@@ -1,0 +1,43 @@
+.subheader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  top: 0px !important;
+  .subheader-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @media only screen and (max-width: 767px) {
+      .subheader-toolbar {
+        padding-top: .5rem;
+      }
+    }
+  }
+  .subheader-fixed & {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    z-index: $z-index-anchor;
+    @apply bg-white;
+    margin: 0;
+    // @include shadow-3dp();
+  }
+
+  .sidebar-compact &, .sidebar-compact-onhover & {
+    left: $layout1-sidebar-compact-width;
+  }
+  
+  .subheader-main, .subheader-toolbar{
+    display: flex;
+    align-items: center;
+  }
+  .subheader-title {
+    @apply text-gray-800;;
+    @apply text-lg;
+    @apply font-semibold;
+    margin: 0;
+    padding-right: 1rem;
+  }
+}

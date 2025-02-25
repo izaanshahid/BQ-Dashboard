@@ -1,0 +1,32 @@
+.pagination-link {
+  @apply relative -ml-px inline-flex items-center px-4 py-2 border border-gray-200 bg-white text-sm leading-5 font-medium text-blue-600 transition ease-in-out duration-150;
+  &.pagination-icon {
+    padding: 6px 16px;
+  }
+  &.active {
+    @apply text-white bg-primary-600 border border-primary-600;
+    
+  }
+} 
+
+.pagination-pill {
+  .pagination-icon-left-pill {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 6px 16px;
+    &.active {
+      @apply text-white bg-primary-600 border border-primary-600;
+      
+    }
+  }
+  .pagination-icon-right-pill {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 6px 16px;
+    &.active {
+      @apply text-white bg-primary-600 border border-primary-600;
+      
+    }
+  }
+}
+

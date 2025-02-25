@@ -1,0 +1,175 @@
+
+@import '../fonts/flaticon/flaticon';
+//icons
+@import "../fonts/iconsmind/iconsmind";
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: $font-family-base !important;
+  font-size: 0.875rem !important;
+  @apply text-base bg-gray-50 ;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+  overflow-x: hidden;
+  color:#47404f;
+  
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+// pre-loader
+
+.loadscreen {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    height: 100vh;
+    background: #fff;
+    z-index: 999;
+
+     .loader {
+    position: absolute;
+    top: calc(50vh - 50px);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.spinner-bubble-primary {
+    @apply text-primary-500;
+    @apply bg-primary-500;
+
+}
+.spinner-bubble {
+    display: inline-block;
+    font-size: 8px;
+    margin: 30px auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation: bubble-circle 1.3s linear infinite;
+    animation: bubble-circle 1.3s linear infinite;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+}
+
+
+
+pre, code, kbd, samp {
+  font-family: $font-family-code;
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+ @apply text-primary-500 no-underline;
+  
+
+&:hover{
+  @apply text-white no-underline;
+ 
+}
+}
+
+select,
+button,
+textarea,
+input {
+  vertical-align: baseline;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  &[dir="rtl"],
+  &[dir="ltr"] {
+    unicode-bidi: embed;
+  }
+}
+
+bdo[dir="rtl"] {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+bdo[dir="ltr"] {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}
+
+.fa, .fas {
+  font-weight: 900 !important;
+}
+svg.feather {
+  height: 1rem;
+  width: 1rem;
+  vertical-align: text-top;
+}
+
+// init flaticon
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/Flaticon.eot");
+  src: url("../fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon/Flaticon.woff2") format("woff2"),
+       url("../fonts/flaticon/Flaticon.woff") format("woff"),
+       url("../fonts/flaticon/Flaticon.ttf") format("truetype"),
+       url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// init iconsmind
+@font-face {
+  font-family: "iconsmind";
+  src: url("../fonts/iconsmind/iconsmind.eot?ioqkm7");
+  src: url("../fonts/iconsmind/iconsmind.eot?ioqkm7#iefix") format("embedded-opentype"),
+    url("../fonts/iconsmind/iconsmind.ttf?ioqkm7") format("truetype"),
+    url("../fonts/iconsmind/iconsmind.woff?ioqkm7") format("woff"),
+    url("../fonts/iconsmind/iconsmind.svg?ioqkm7#iconsmind") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"], [class*=" flaticon-"] {
+  &::before{
+    display: inline-block;
+    font-family: "Flaticon";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+}

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preview Laravel version - Aatrox Admin Dashboard</title><!-- Hotjar Tracking Code for http://Aatrox.ui-lib.com/ -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 2080096,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+    <link rel="stylesheet" href="assets/css/main.bundle.min.css">
+    <link rel="stylesheet" href="assets/css/tailwind.bundle.min.css">
+    <link rel="stylesheet" href="assets/css/pages/demo.min.css">
+</head>
+
+<body class="laravel">
+    <div class="loadscreen" id="preloader">
+        <div class="loader spinner-bubble spinner-bubble-primary"></div>
+    </div>
+    <section class="landing-section intro bg-gradient-to-r from-gray-300 via-gray-200 to-primary-300 h-screen">
+        <header class="demo-header">
+            <div class="container mx-auto flex mx-auto lg:px-20"><img src="assets/images/logo.png" style="height: 40px"><span class="flex-grow"></span></div>
+        </header>
+        <div class="floating-images"><img class="img1" src="assets/images/logos/bootstrap.png" alt=""><img class="img2" src="assets/images/logos/angular.png" alt=""><img class="img3" src="assets/images/logos/vue.png" alt=""><img class="img4" src="assets/images/logos/react.png" alt=""><img class="img5" src="assets/images/logos/sass.png" alt=""><img class="img6" src="assets/images/logos/laravel.png" alt=""></div>
+        <div class="container mx-auto lg:px-20">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-12 md:col-span-5">
+                    <div class="framwork-icons mb-5"><span class="text-muted text-small mb-2 block ml-1">All in 1 Pack</span><a class="btn rounded-full btn-icon btn-opacity btn-light" href="html/index.html" data-toggle="tooltip" title="HTML Tailwind"><img class="h-4 w-4" src="assets/images/logos/tailwind.svg" alt=""></a><a class="btn rounded-full btn-icon btn-raised bg-white" href="laravel/index.html" data-toggle="tooltip" title="laravel"><img class="h-4 w-4" src="assets/images/logos/laravel.png" alt=""></a><a class="btn rounded-full btn-icon btn-opacity btn-light" href="#" data-toggle="tooltip" title="Comming Soon"><img class="h-4 w-4" src="assets/images/logos/bootstrap.png" alt=""></a><a class="btn rounded-full btn-icon btn-opacity btn-light" href="#" title="Comming Soon" data-toggle="tooltip"><img class="h-4 w-4" src="assets/images/logos/vue.png" alt=""></a><a class="btn rounded-full btn-icon btn-opacity btn-light" href="#" data-toggle="tooltip" title="Comming Soon"><img class="h-4 w-4" src="assets/images/logos/angular.png" alt=""></a><a class="btn rounded-full btn-icon btn-opacity btn-light" href="#" data-toggle="tooltip" title="Comming Soon"><img class="h-4 w-4" src="assets/images/logos/react.png" alt=""></a></div>
+                    <h1 class="mb-5 welcome-heading-1 text-gray-800"><span>AatroX </span>Laravel Admin Dasboard Template</h1>
+                    <p class="mb-5 text-base">Grab the most developer friendly Admin Dashboard, UI Kits & Design System. Clean, Fast & Easy to Customize</p>
+                    <div class="mb-5">
+                        <p class="mb-2"><span class="badge text-gray-600 bg-gray-50 mr-3">Production Ready</span><span class="badge text-gray-600 bg-gray-50 mr-3">Build for developers and programmers</span></p>
+                        <p class="mb-2"><span class="badge text-gray-600 bg-gray-50 mr-3">Fully Customized </span><span class="badge text-gray-600 bg-gray-50 mr-3">Modern & Unique Design </span></p>
+                        <p class="mb-2"><span class="badge text-gray-600 bg-gray-50 mr-3">Fully Responsive & Easy To use</span><span class="badge text-gray-600 bg-gray-50 mr-3">No Jquery Included</span></p>
+                    </div><a class="btn btn-flat btn-primary rounded-full mt-4" id="btn-view-demos" href="html/index.html#demos">View Demos</a><a class="btn btn-flat btn-success rounded-full mt-4 ml-4" href="html/index.html#demos">Buy Now</a>
+                </div>
+                <div class="col-span-12 md:col-span-12 lg:col-span-7">
+                    <div class="h-full flex items-center " id="intro-parallax-layers">
+                        <div class="layer shadow-lg transform rotate-0 w-full" data-depth="0.6"><img class="rounded-lg" src="assets/images/screenshots/demo/demo.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-header">
+                <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7"></use>
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"></use>
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"></use>
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"></use>
+                        </g>
+                    </svg>
+                </div>
+                <!-- Waves end-->
+            </div>
+            <div id="demos"></div>
+    </section>
+    <section class="landing-section docs bg-white">
+        <div class="container mx-auto lg:px-20"></div>
+        <section class="mt-6">
+            <div class="container mx-auto lg:px-20">
+                <div class="text-center">
+                    <h3 class="font-bold text-black text-3xl mb-2">Unique Layouts</h3>
+                    <p class="mb-2">AatroX Provides Three Unique Layouts for Robust Use Case And Development </p>
+                </div>
+                <div class="mx-auto overflow-hidden mb-6 mt-10">
+                    <div class="demo-container mx-auto px-6 container">
+                        <div class="grid grid-cols-12 gap-8">
+                            <div class="col-span-12 md:col-span-6">
+                                <div class="preview-box mb-4">
+                                    <div class="card-body">
+                                        <h5 class="text-16 font-bold mb-4">Unique Modern Layout</h5>
+                                        <div class="mb-4"><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/dashboards/dashboard.dashboard.v1.html" target="_blank">Tailwind</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/dashboards/dashboard.dashboard.v1.html" target="_blank"> Green Layout</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/large-sidebar/dashboard/v1" target="_blank">Tailwind+Laravel</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/dashboards/dashboard.dashboard.v1.html" target="_blank">RTL</a></div>
+                                        <div class="thumbnail mt-4"><a href="/preview/layout2/dashboards/dashboard.dashboard.v1.html" target="_blank"><img src="assets/images/screenshots/demo/layout1.png"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-12 md:col-span-6">
+                                <div class="preview-box mb-4">
+                                    <div class="card-body">
+                                        <h5 class="text-16 font-bold mb-4">Vertical Sidebar Layout</h5>
+                                        <div class="mb-4"><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout1/dashboards/dashboard.dashboard.v2.html" target="_blank">Tailwind</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout1-green/dashboards/dashboard.dashboard.v2.html" target="_blank"> Green Layout</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/vertical-sidebar/dashboard/v1" target="_blank">Tailwind+Laravel</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout1-rtl/dashboards/dashboard.dashboard.v2.html" target="_blank">RTL</a></div>
+                                        <div class="thumbnail mt-4"><a href="/preview/layout1/dashboards/dashboard.dashboard.v2.html" target="_blank"><img src="assets/images/screenshots/demo/layout2.png"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-12 md:col-span-6">
+                                <div class="preview-box mb-4">
+                                    <div class="card-body">
+                                        <h5 class="text-16 font-bold mb-4">Compact Sidebar Layout</h5>
+                                        <div class="mb-4"><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout3/dashboards/dashboard.Analytic-2.html" target="_blank">Tailwind</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout3-green/dashboards/dashboard.Analytic-2.html" target="_blank"> Green Layout</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/compact-sidebar/dashboard/v5" target="_blank">Tailwind+Laravel</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout3-rtl/dashboards/dashboard.Analytic-2.html" target="_blank">RTL</a></div>
+                                        <div class="thumbnail mt-4"><a href="/preview/layout3/dashboards/dashboard.Analytic-2.html" target="_blank"><img src="assets/images/screenshots/demo/layout3.png"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="landing-section docs bg-white">
+        <div class="container mx-auto lg:px-20">
+            <div class="text-center">
+                <h3 class="font-bold text-black text-3xl mb-2">Comprehensive Dashboards</h3>
+                <p class="mb-2">AatroX Provide Five Modern & Unique Design Yet Comprehensive Well organized Ready to use Dashboard.</p>
+            </div>
+            <div class="mx-auto overflow-hidden mb-6 mt-10">
+                <div class="demo-container mx-auto px-6 container">
+                    <div class="grid grid-cols-12 gap-5">
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Dashboard Version 1 </h5>
+                                    <div class="mb-4"><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/dashboards/dashboard.dashboard.v1.html" target="_blank">Tailwind</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/dashboards/dashboard.dashboard.v1.html" target="_blank"> Green Layout</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/dashboard/v1" target="_blank">Tailwind+Laravel</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/dashboards/dashboard.dashboard.v1.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="/preview/layout1/dashboards/dashboard.dashboard.v1.html" target="_blank"><img src="assets/images/screenshots/demo/dashboard1.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Dashboard Version 2 </h5>
+                                    <div class="mb-4"><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/dashboards/dashboard.dashboard.v2.html" target="_blank">Tailwind</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/dashboards/dashboard.dashboard.v2.html" target="_blank"> Green Layout</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/dashboard/v2" target="_blank">Tailwind+Laravel</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/dashboards/dashboard.dashboard.v2.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="/preview/layout2/dashboards/dashboard.dashboard.v2.html" target="_blank"><img src="assets/images/screenshots/demo/dashboard2.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Dashboard Version 3 </h5>
+                                    <div class="mb-4"><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/dashboards/dashboard.dashboard.v3.html" target="_blank">Tailwind</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/dashboards/dashboard.dashboard.v3.html" target="_blank"> Green Layout</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/dashboard/v3" target="_blank">Tailwind+Laravel</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/dashboards/dashboard.dashboard.v3.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="/preview/layout3/dashboards/dashboard.dashboard.v3.html" target="_blank"><img src="assets/images/screenshots/demo/dashboard3.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Dashboard Version 4 </h5>
+                                    <div class="mb-4"><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/dashboards/dashboard.dashboard.v4.html" target="_blank">Tailwind</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/dashboards/dashboard.dashboard.v4.html" target="_blank"> Green Layout</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/dashboard/v4" target="_blank">Tailwind+Laravel</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/dashboards/dashboard.dashboard.v4.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="/preview/layout3/dashboards/dashboard.dashboard.v4.html" target="_blank"><img src="assets/images/screenshots/demo/dashboard4.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Dashboard Version 5</h5>
+                                    <div class="mb-4"><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/dashboards/dashboard.Analytic-2.html" target="_blank">Tailwind</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/dashboards/dashboard.Analytic-2.html" target="_blank"> Green Layout</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/dashboard/v5" target="_blank">Tailwind+Laravel</a><a class="btn btn-opacity btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/dashboards/dashboard.Analytic-2.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="/preview/layout3/dashboards/dashboard.Analytic-2.html" target="_blank"><img src="assets/images/screenshots/demo/dashboard5.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="landing-sention built-with" id="built-with">
+        <div class="container mx-auto lg:px-20">
+            <div class="text-center">
+                <h3 class="font-bold text-black text-3xl mb-2">Awesome Features</h3>
+                <p class="mb-2">AatroX Packed With Tons of Useful Hidden Features , Some are Listed below.</p>
+            </div>
+            <div class="flex flex-wrap justify-center mt-10">
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/logos/tailwind.svg"><span>TailwindCss</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/logos/sass.png"><span>SASS</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/018-b.svg"><span>Blade</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/logos/npm.png"><span>NPM</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/logos/yarn.svg"><span>Yarn</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/014-plugin.svg"><span>100+ Plugins</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/017-right.svg"><span>RTL Support</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/001-erase.svg"><span>Datatables</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/002-calendar-1.svg"><span>Calendar</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/016-shopping-cart.svg"><span>eCommerce</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/logos/apexchart.svg"><span>Apexcharts</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/004-customer-support.svg"><span>Support App</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/005-price-tag.svg"><span>Pricings</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/006-inbox.svg"><span>Mail App</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/007-chat.svg"><span>Chat App</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/008-task.svg"><span>Scrumboard</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/009-data-management.svg"><span>File manager</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/010-notebook.svg"><span>Note App</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/012-invoice.svg"><span>Invoice App</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/013-profile.svg"><span>User Profile</span></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><img class="mb-2" src="assets/images/colored-icons/015-solar-system.svg"><span>Design System</span></div>
+            </div>
+        </div>
+    </section>
+    <section class="landing-section docs bg-white">
+        <div class="container mx-auto lg:px-20">
+            <div class="text-center">
+                <h3 class="font-bold text-black text-3xl mb-2">Built In Applications</h3>
+                <p class="mb-2">Save Development Time Using Our pre-built Applications</p>
+            </div>
+            <div class="mx-auto overflow-hidden mb-6 mt-10">
+                <div class="demo-container mx-auto px-6 container">
+                    <div class="grid grid-cols-12 gap-5">
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Ecommerce App</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/apps/app.ecommerce.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/apps/app.ecommerce.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/apps/ecommerce/shop" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/apps/app.ecommerce.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/apps/app.ecommerce.html" target="_blank"><img src="assets/images/screenshots/demo/ecommerce.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Inbox App</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/apps/app.inbox.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/apps/app.inbox.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/apps/inbox" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/apps/app.inbox.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/apps/app.inbox.html" target="_blank"><img src="assets/images/screenshots/demo/inbox.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Contacts App </h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/apps/app.contact-list.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/apps/app.contact-list.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/apps/contact/list" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/apps/app.contact-list.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/apps/app.contact-list.html" target="_blank"><img src="assets/images/screenshots/demo/contacts.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Calendar App</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/apps/app.event-calendar.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/apps/app.event-calendar.html" target="_blank">Tailwind Green</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/apps/calendar" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/apps/app.event-calendar.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/apps/app.event-calendar.html" target="_blank"><img src="assets/images/screenshots/demo/calendar.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Chat App</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/apps/chat.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/apps/chat.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/apps/chat" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/apps/chat.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/apps/chat.html" target="_blank"><img src="assets/images/screenshots/demo/chat.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">ToDo App </h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/apps/app.todo-list.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/apps/app.todo-list.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/apps/todo" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/apps/app.todo-list.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/apps/app.todo-list.html" target="_blank"><img src="assets/images/screenshots/demo/todo.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Invoice App </h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/apps/app.invoice-list.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/apps/app.invoice-list.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/apps/invoice/list" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/apps/app.invoice-list.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/apps/app.invoice-list.html" target="_blank"><img src="assets/images/screenshots/demo/invoice.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="landing-section docs">
+        <div class="container mx-auto lg:px-20">
+            <div class="text-center">
+                <h3 class="font-bold text-black text-3xl mb-2">Reusable Components</h3>
+                <p class="mb-2">Aatrox Comes with Lots of useful Components.Save Development Time Using Our pre-built Reusable components</p>
+            </div>
+            <div class="mx-auto overflow-hidden mb-6 mt-10"></div>
+            <div class="flex flex-wrap justify-center">
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/components/components.alert.html"><i class="i-Bar-Chart text-3xl"></i>
+                        <p>Alerts</p>
+                    </a></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"> <a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/components/components.avatar.html"><i class="i-Computer-Secure text-3xl"></i>
+                        <p>Avatars</p>
+                    </a></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/components/components.badge.html"><i class="i-Wallet text-3xl"></i>
+                        <p>Badge</p>
+                    </a></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"> <a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/components/components.buttons.html"><i class="i-Atom text-3xl"></i>
+                        <p>Buttons</p>
+                    </a></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/components/components.dropdown.html"><i class="i-Find-User text-3xl"></i>
+                        <p>Dropdown</p>
+                    </a></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/components/components.forms.html"><i class="i-Administrator text-3xl"></i>
+                        <p>Forms</p>
+                    </a></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/components/components.modal.html"><i class="i-Pie-Chart-2 text-3xl"></i>
+                        <p>Modals</p>
+                    </a></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/components/components.pagination.html"><i class="i-Pie-Chart-2 text-3xl"></i>
+                        <p>Pagination</p>
+                    </a></div>
+                <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/components/components.progressbar.html"><i class="i-Pie-Chart-2 text-3xl"></i>
+                        <p>Progress Bar </p>
+                    </a></div>
+            </div>
+        </div>
+    </section>
+    <section class="landing-section docs bg-white">
+        <div class="container mx-auto lg:px-20">
+            <div class="text-center">
+                <h3 class="font-bold text-black text-3xl mb-2">Hand Crafted Pages</h3>
+                <p class="mb-2">Aatrox Comes with Lots of useful Widgets.Which Helps you to Rapid & Fast Development </p>
+            </div>
+            <div class="mx-auto overflow-hidden mb-6 mt-10">
+                <div class="demo-container mx-auto px-6 container">
+                    <div class="grid grid-cols-12 gap-5">
+                        <div class="col-span-12 md:col-span-6">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Profile Version 1 </h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/profile/profile.v1.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/pages/profile/profile.v1.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/profile/profile.v1" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/profile/profile.v1.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/profile/profile.v1.html" target="_blank"><img src="assets/images/screenshots/demo/profile1.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">profile Version 2 </h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/profile/profile.v2.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/pages/profile/profile.v2.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/profile/profile.v2" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/profile/profile.v2.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/profile/profile.v2.html" target="_blank"><img src="assets/images/screenshots/demo/profile2.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="landing-section docs">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h3 class="font-bold text-black text-3xl mb-2">Advanced Widgets</h3>
+                <p class="mb-2">Aatrox Comes with Lots of useful Widgets.Which Helps you to Rapid & Fast Development </p>
+            </div>
+            <div class="mx-auto overflow-hidden mb-6 mt-10">
+                <div class="flex flex-wrap justify-center">
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/widgets/widgets.general.html"><i class="i-Bar-Chart text-3xl"></i>
+                            <p>General Wigets</p>
+                        </a></div>
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"> <a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/widgets/widgets.charts.html"><i class="i-Computer-Secure text-3xl"></i>
+                            <p>Chart Widgets</p>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="landing-section docs bg-white">
+        <div class="container mx-auto lg:px-20">
+            <div class="text-center">
+                <h3 class="font-bold text-black text-3xl mb-2">Session Pages</h3>
+                <p class="mb-2">Save Development Time Using Our pre-built Session Pages</p>
+            </div>
+            <div class="mx-auto overflow-hidden mb-6 mt-10">
+                <div class="demo-container mx-auto px-6 container">
+                    <div class="grid grid-cols-12 gap-5">
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Signin version 1</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/signin.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/pages/sessions/signin.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/session/signin.v1" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/sessions/signin.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/sessions/signin.html" target="_blank"><img src="assets/images/screenshots/demo/signin.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Signin version 2</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/signin2.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/pages/sessions/signin2.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/session/signin.v2" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/sessions/signin2.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/sessions/signin2.html" target="_blank"><img src="assets/images/screenshots/demo/signin2.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Signin version 3 </h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/signin3.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/signin3.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/session/signin.v3" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/sessions/signin3.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/sessions/signin3.html" target="_blank"><img src="assets/images/screenshots/demo/signin3.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Signin version 4</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/signin4.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/signin4.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/session/signin.v4" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/sessions/signin4.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/sessions/signin4.html" target="_blank"><img src="assets/images/screenshots/demo/signin4.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Signup version 1</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/signup.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/pages/sessions/signup.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/session/signup.v1" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/sessions/signup.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/sessions/signup.html" target="_blank"><img src="assets/images/screenshots/demo/signup.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Signup version 2</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/signup2.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/pages/sessions/signup2.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/session/signup.v2" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/sessions/signup2.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/sessions/signup2.html" target="_blank"><img src="assets/images/screenshots/demo/signup2.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Signup version 3</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/signup3.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/pages/sessions/signup3.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/session/signup.v3" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/sessions/signup3.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/sessions/signup3.html" target="_blank"><img src="assets/images/screenshots/demo/signup3.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Signup version 4</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/signup4.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/pages/sessions/signup4.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/session/signup.v4" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/sessions/signup4.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/sessions/signup4.html" target="_blank"><img src="assets/images/screenshots/demo/signup4.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">404 page</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/404.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/404.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/session/error-404" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/sessions/404.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/sessions/404.html" target="_blank"><img src="assets/images/screenshots/demo/404.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="preview-box mb-4">
+                                <div class="card-body">
+                                    <h5 class="text-16 font-bold mb-4">Forgot Password</h5>
+                                    <div class="mb-4"><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2/pages/sessions/forgot.html" target="_blank">Tailwind</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-green/pages/sessions/forgot.html" target="_blank">Green Layout</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="https://aatrox.herokuapp.com/pages/session/forgot" target="_blank">Tailwind+Laravel</a><a class="btn btn-secondary btn-sm mr-1 px-2 mt-2 mb-2" href="./preview/layout2-rtl/pages/sessions/forgot.html" target="_blank">RTL</a></div>
+                                    <div class="thumbnail mt-4"><a href="./preview/layout2/pages/sessions/forgot.html" target="_blank"><img src="assets/images/screenshots/demo/forgot.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="landing-section docs">
+        <div class="container mx-auto lg:px-20">
+            <div class="text-center">
+                <h3 class="font-bold text-black text-3xl mb-2">Eye Catching Charts</h3>
+                <p class="mb-2">Aatrox Comes with Lots of useful Charts.Save Development Time Using Our pre-built Reusable Charts</p>
+            </div>
+            <div class="mx-auto overflow-hidden mb-6 mt-10">
+                <div class="flex flex-wrap justify-center">
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/charts/apexCharts/apexCharts.bar.html"><i class="i-Bar-Chart text-3xl"></i>
+                            <p>Bar charts</p>
+                        </a></div>
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"> <a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/charts/apexCharts/apexCharts.area.html"><i class="i-Bar-Chart-5 text-3xl"></i>
+                            <p>Area Charts</p>
+                        </a></div>
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/charts/apexCharts/apexCharts.bubble.html"><i class="i-Pie-Chart-2 text-3xl"></i>
+                            <p>Bubble Charts</p>
+                        </a></div>
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"> <a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/charts/apexCharts/apexCharts.line.html"><i class="i-Line-Chart text-3xl"></i>
+                            <p>Line charts</p>
+                        </a></div>
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/charts/apexCharts/apexCharts.pie.html"><i class="i-Pie-Chart text-3xl"></i>
+                            <p>Pie Charts</p>
+                        </a></div>
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/charts/apexCharts/apexCharts.radar.html"><i class="i-Pie-Chart-3 text-3xl"></i>
+                            <p>Raddar Charts</p>
+                        </a></div>
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/charts/apexCharts/apexCharts.radialBar.html"><i class="i-Pie-Chart-2 text-3xl"></i>
+                            <p>Radial Bar </p>
+                        </a></div>
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/charts/apexCharts/apexCharts.scatter.html"><i class="i-Bar-Chart-4 text-3xl"></i>
+                            <p>Scatter Charts</p>
+                        </a></div>
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/charts/apexCharts/apexCharts.column.html"><i class="i-Bar-Chart-3 text-3xl"></i>
+                            <p>Column Charts</p>
+                        </a></div>
+                    <div class="mx-4 mb-6 px-8 py-6 shadow-lg flex flex-col justify-center justify-items-center rounded text-center text-center built-with-box"><a class="nav-item-hold hover:text-primary-500" href="./preview/layout2/charts/apexCharts/apexCharts.sparkline.html"><i class="i-Pie-Chart-3 text-3xl"></i>
+                            <p>Sparkline Charts </p>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="demo-footer gray-200 border-top">
+        <div class="demo-container mx-auto px-10 container mx-auto lg:px-20">
+            <div class="grid grid-cols-12 gap-5 py-6">
+                <div class="col-span-6"><a class="d-inline-block" href="https://ui-lib.com" target="_blank"><img class="footer-logo" src="assets/images/logos/ui-lib.png"></a></div>
+                <div class="col-span-6 flex">
+                    <div class="flex-grow"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/vendors.bundle.min.js"></script>
+    <script src="assets/js/main.bundle.min.js"></script>
+    <script src="assets/js/pages/sidebar.script.min.js"></script>
+    <script src="assets/vendors/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/js/pages/demo.min.js"></script>
+</body>
+
+</html>
